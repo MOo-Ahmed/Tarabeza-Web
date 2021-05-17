@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Restaurant profile</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets2/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets2/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets2/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets2/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets2/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets2/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets2/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets2/css/style.css" rel="stylesheet">
+
+    <!-- ======================================================= * Template Name: Presento - v1.1.1 * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/ * Author: BootstrapMade.com * License: https://bootstrapmade.com/license/ ======================================================== -->
+  </head>
+
+  <body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-xl-10 d-flex align-items-center">
+            <h1 class="logo mr-auto">
+              <a href="index.html">Tarabeza<span>.</span></a>
+            </h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+            <nav class="nav-menu d-none d-lg-block">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <!-- <li><a href="#about">About</a></li> <li><a href="#services">Services</a></li> <li><a href="#portfolio">Portfolio</a></li> <li><a href="#team">Team</a></li> -->
+                
+                
+              </ul>
+            </nav>
+            <!-- .nav-menu -->
+
+            <a href="index.html#tabs" class="get-started-btn scrollto">Download</a>
+
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+
+      <!-- ======= Breadcrumbs ======= -->
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <ol>
+                <li>
+                  <a href="Home.html">Home</a>
+                </li>
+                <li id="rest_name_bread">Restaurant name</li>
+              </ol>
+              <h2 id="rest_name">Restaurant name</h2>
+              <h4 class="ml-2" id="rest_rating">Restaurant rating</h2>
+                <button id='view_menu' type="button" class="btn get-started-btn ml-0 mt-4 mb-4" data-toggle="modal" data-target="#menu_modal">
+                  View our menu
+                </button>
+                <button id='view_reviews' type="button" class="btn get-started-btn mt-4 mb-4" data-toggle="modal" data-target="#reviews_modal">
+                  View reviews
+                </button>
+            </div>
+            <div class="col-lg-4">
+              <img id='restaurant-logo' src="" class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Breadcrumbs -->
+
+      <!-- ======= About Section ======= -->
+      <section id="about" class="counts">
+        <div class="container">
+
+          <div class="row" data-aos="fade-up">
+
+            <div class="col-lg-4 col-md-6">
+              <div class="count-box">
+                <i class="icofont-location-pin"></i>
+                <span>Address</span>
+                <p id='address'>19 Dokki street</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+              <div class="count-box">
+                <i class="icofont-phone"></i>
+                <span>Phone</span>
+                <p id='phone'>01124242422</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+              <div class="count-box">
+                <i class="icofont-clock-time"></i>
+                <span>Open at</span>
+                <p id='openAt'>9 AM - 9 PM</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- Modal for reviews -->
+      <!-- <div class="row"> <div class="col text-center"> <button type="button" class="btn get-started-btn mt-4 mb-4" data-toggle="modal" data-target="#menu_modal"> View our menu </button> <button type="button" class="btn get-started-btn mt-4 mb-4" data-toggle="modal" data-target="#reviews_modal"> View reviews </button> </div> </div> -->
+
+      <!--Menu modal-->
+      <div class="modal" id="menu_modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <div class="row">
+                <div class="col-md-5">
+                  <h4 class="modal-title">Our Menu</h4>
+                </div>
+                <div class="col-md-7">
+                  <form action="" method="post" class="input-group">
+                    <input type="text" class="form-control mb-4 mr-sm-2" placeholder="Type an item name">
+                    <input type="submit" value="Search" class="btn btn-dark btn-block mb-1 mlsm-4 mrsm-4">
+                  </form>
+                </div>
+              </div>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body" id='menu_body'></div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Modal -->
+      <div class="modal" id="reviews_modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Our customer's reviews</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div>
+                <h4>
+                  Customer 1
+                </h4>
+                <p class="ml-2">Sample review</p>
+              </div>
+              <div>
+                <h4>
+                  Customer 1
+                </h4>
+                <p class="ml-2">Sample review</p>
+              </div>
+              <div>
+                <h4>
+                  Customer 1
+                </h4>
+                <p class="ml-2">Sample review</p>
+              </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- End of reviews modal -->
+
+      <!-- End #main -->
+
+      <a href="#" class="back-to-top">
+        <i class="icofont-simple-up"></i>
+      </a>
+      <div id="preloader"></div>
+
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+
+        
+
+        <div class="container d-md-flex py-4">
+
+          <div class="mr-md-auto text-center text-md-left">
+            <div class="copyright">
+          &copy; Copyright <strong><span>Tarabeza</span></strong>. All Rights Reserved
+        </div>
+            
+          </div>
+          <div class="social-links text-center text-md-right pt-3 pt-md-0">
+            <a href="#" class="twitter">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="#" class="facebook">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#" class="instagram">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#" class="google-plus">
+              <i class="bx bxl-skype"></i>
+            </a>
+            <a href="#" class="linkedin">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+
+      <a href="#" class="back-to-top">
+        <i class="icofont-simple-up"></i>
+      </a>
+
+      <!-- Vendor JS Files -->
+      <script src="assets2/vendor/jquery/jquery.min.js"></script>
+      <script src="assets2/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets2/vendor/jquery.easing/jquery.easing.min.js"></script>
+      <script src="assets2/vendor/php-email-form/validate.js"></script>
+      <script src="assets2/vendor/owl.carousel/owl.carousel.min.js"></script>
+      <script src="assets2/vendor/waypoints/jquery.waypoints.min.js"></script>
+      <script src="assets2/vendor/counterup/counterup.min.js"></script>
+      <script src="assets2/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets2/vendor/venobox/venobox.min.js"></script>
+      <script src="assets2/vendor/aos/aos.js"></script>
+
+      <!-- Template Main JS File -->
+      <script src="assets2/js/main.js"></script>
+      <script src="assets2/js/fetch_api.js"></script>
+
+    </body>
+
+  </html>
